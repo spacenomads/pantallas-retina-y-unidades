@@ -2,7 +2,7 @@ html,
 body  {
   border: 3px solid teal;
   position: relative;
-  height: 100%;
+  min-height: 100%;
   box-sizing: border-box;
   font-family: arial;
 }
@@ -34,8 +34,8 @@ body::before {
 .app__snitch {
   background-color: rgba(0,0,0, .2); 
   position: absolute;
-  left: 1em;
-  top: 1em;
+  right: 8px;
+  top: 24px;
   padding: 4px 8px;
   border-radius: 6px;
 }
