@@ -9,7 +9,7 @@ function getBrowserSize() {
 
 function paintBrowserSize(el) {
   const {width, height} = getBrowserSize();
-  el.innerHTML = `Ventana: ${width}px X ${height}px`;
+  el.innerHTML = `Ventana: <b>${width}</b>x<b>${height}</b> px`;
 }
 
 paintBrowserSize(snitch);
