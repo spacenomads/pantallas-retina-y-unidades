@@ -1,0 +1,117 @@
+.app__snitch {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 4px 8px;
+  position: absolute;
+  right: 8px;
+  top: 24px;
+  z-index: 1;
+}
+
+.app__images {
+  display: none;
+}
+
+.groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  border: 3px solid teal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+  height: 100%;
+  position: relative;
+}
+
+html::before,
+body::before {
+  background-color: teal;
+  border-radius: 0 0 4px 4px;
+  color: white;
+  content: 'HTML';
+  font-size: 10px;
+  padding: 2px 6px;
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+body {
+  border-color: red;
+  margin: 0;
+  min-width: 100%;
+}
+
+body::before {
+  background-color: red;
+  content: 'BODY';
+  right: 6em;
+}
+
+.app__main {
+  margin: 0 2rem;
+}
+
+.app__main .app__hero {
+  margin: 0 -2rem;
+}
+
+.app__units {
+  display: none;
+}
+
+.app__unit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app__unit--ch {
+  background: gold;
+  width: 89px;
+}
+
+.app__unit--vw {
+  background: tomato;
+  width: 615px;
+}
+
+.app__unit--per {
+  background: orange;
+  width: 577px;
+}
+
+.app__unit--px {
+  background: skyblue;
+  padding: 20px;
+  width: 500px;
+}
+
+.app__unit--em {
+  background: greenyellow;
+  padding: 20px;
+  width: 500px;
+}
+
+.app__unit--rem {
+  background: green;
+  padding: 20px;
+  width: 500px;
+}
+
+.app__em {
+  display: none;
+}
+
+.app__hero {
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */

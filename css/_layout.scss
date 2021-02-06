@@ -1,0 +1,49 @@
+html {
+	font-size: px($font_size);
+}
+html,
+body {
+	border: 3px solid teal;
+	box-sizing: border-box;
+	font-family: arial;
+	height: 100%;
+	position: relative;
+
+	&::before {
+		background-color: teal;
+		border-radius: 0 0 4px 4px;
+		color: white;
+		content: 'HTML';
+		font-size: 10px;
+		padding: 2px 6px;
+		position: absolute;
+		right: 1em;
+		top: 0;
+	}
+}
+
+body {
+	border-color: red;
+	margin: 0;
+	min-width: 100%;
+
+	&::before {
+		background-color: red;
+		content: 'BODY';
+		right: 6em;
+	}
+}
+
+
+
+
+
+.app__main {
+	margin: 0 2rem;
+	.app__hero {
+		margin: 0 -2rem;
+	}
+}
+.app__title {
+	// display: none;
+}

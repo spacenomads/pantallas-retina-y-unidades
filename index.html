@@ -1,46 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/snitch.css">
-  <link rel="stylesheet" href="css/media.css">
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Pantallas "Retina" y unidades</title>
+	<link rel="stylesheet" href="css/app.css">
 </head>
 <body class="app js__app">
-  <div class="app__snitch js__snitch"></div>
+	<main class="app__main">
 
-  <div class="groups">
-    <div class="group">
-      <div class="media media--text">
-        <img src="img/text.png" alt="" class="media__img">
-      </div>
-      
-      <div class="media media--text">
-        <img src="img/text@2x.png" alt="" class="media__img">
-      </div>
-      
-      <div class="media media--text">
-        <img src="img/text@3x.png" alt="" class="media__img">
-      </div>
-    </div>
+		<section class="app__hero">
+			<h1 class="app__title app__hero-title">Ay, el mar 🐳</h1>
+			<img src="assets/img/ay-el-mar.jpg" alt="Imagen de mar to bonico" class="app__hero-cover">
+		</section>
 
-    
-    <div class="group">
-      <div class="media media--circle">
-        <img src="img/circle.png" alt="Yellow circle" class="media__img">
-      </div>
-      
-      <div class="media media--circle">
-        <img src="img/circle@2x.png" alt="Yellow circle" class="media__img">
-      </div class="img img--circle">
-      
-      <div class="media media--circle">
-        <img src="img/circle@3x.png" alt="Yellow circle" class="media__img">
-      </div>
-    </div>
-  </div>
+		<h1 class="app__title">Pantallas "Retina" y unidades</h1>
+		<section class="app__images">
+			<h2 class="app__section-title">Imágenes</h2>
 
-  <script src="js/snitch.js"></script>
+			<div class="groups">
+				<div class="group">
+					<div class="media media--text">
+						<img src="assets/img/text.png" alt="" class="media__img">
+					</div>
+
+					<div class="media media--text">
+						<img src="assets/img/text@2x.png" alt="" class="media__img">
+					</div>
+
+					<div class="media media--text">
+						<img src="assets/img/text@3x.png" alt="" class="media__img">
+					</div>
+				</div>
+
+
+				<div class="group">
+					<div class="media media--circle">
+						<img src="assets/img/circle.png" alt="Yellow circle" class="media__img">
+					</div>
+
+					<div class="media media--circle">
+						<img src="assets/img/circle@2x.png" alt="Yellow circle" class="media__img">
+					</div class="img img--circle">
+
+					<div class="media media--circle">
+						<img src="assets/img/circle@3x.png" alt="Yellow circle" class="media__img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="app__units">
+			<h2 class="app__section-title">Unidades</h2>
+			<div class="app__unit app__unit--ch">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+			<div class="app__unit app__unit--ch">
+				0000000000
+			</div>
+			<div class="app__unit app__unit--ch">
+				<b>8888888888</b>
+			</div>
+
+			<div class="app__unit app__unit--vw">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod tenetur blanditiis eius sit minima impedit quas eum reprehenderit ipsum dolores, recusandae distinctio voluptatem! Voluptatum et adipisci voluptate odit odio?
+			</div>
+			<div class="app__unit app__unit--per">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod tenetur blanditiis eius sit minima impedit quas eum reprehenderit ipsum dolores, recusandae distinctio voluptatem! Voluptatum et adipisci voluptate odit odio?
+			</div>
+			<div class="app__unit app__unit--px">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod tenetur blanditiis eius sit minima impedit quas eum reprehenderit ipsum dolores, recusandae distinctio voluptatem! Voluptatum et adipisci voluptate odit odio?
+			</div>
+			<div class="app__unit app__unit--em">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod tenetur blanditiis eius sit minima impedit quas eum reprehenderit ipsum dolores, recusandae distinctio voluptatem! Voluptatum et adipisci voluptate odit odio?
+			</div>
+			<div class="app__unit app__unit--rem">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod tenetur blanditiis eius sit minima impedit quas eum reprehenderit ipsum dolores, recusandae distinctio voluptatem! Voluptatum et adipisci voluptate odit odio?
+			</div>
+		</section>
+
+		<section class="app__em">
+			<h2 class="app__section-title">EM FTW</h2>
+
+			<div class="component">
+				<div class="component__cover">
+					<img src="assets/img/product.jpg" alt="Ordenador de escritorio envuelto en papel y asegurado con cuerda" class="component__image">
+					<div class="component__discount discount">
+							<span class="discount__value">20</span><span class="discount__unit">%</span>
+							<span class="discount__label"> de descuento</span>
+					</div>
+				</div>
+				<div class="component__details">
+					<h3 class="component__title">Título</h3>
+					<p class="component__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum explicabo labore expedita eligendi repudiandae nam earum beatae nemo quibusdam quis, eum amet deleniti tempora, nostrum laboriosam ipsum quo? Perferendis.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="js/snitch.js"></script>
 </body>
 </html>
