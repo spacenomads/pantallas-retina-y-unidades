@@ -12,17 +12,18 @@
 
 .app__unit--ch {
 	background: gold;
-	width: 89px;
+	width: 10ch;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .app__unit--vw {
 	background: tomato;
-	width: 615px;
+	width: 50vw;
 }
 
 .app__unit--per {
 	background: orange;
-	width: 577px;
+	width: 50%;
 }
 
 
@@ -34,12 +35,13 @@
 
 .app__unit--em {
 	background: greenyellow;
-	padding: 20px;
-	width: 500px;
+	padding: em(20);
+	width: em(500);
 }
 
 .app__unit--rem {
 	background: green;
-	padding: 20px;
-	width: 500px;
+	padding: rem(20);
+	width: rem(500);
+
 }

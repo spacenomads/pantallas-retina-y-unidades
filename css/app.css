@@ -18,6 +18,19 @@
   display: flex;
 }
 
+.media__img {
+  display: block;
+  width: 100%;
+}
+
+.media--text {
+  width: 100px;
+}
+
+.media--circle {
+  width: 300px;
+}
+
 html {
   font-size: 16px;
 }
@@ -76,17 +89,18 @@ body::before {
 
 .app__unit--ch {
   background: gold;
-  width: 89px;
+  width: 10ch;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .app__unit--vw {
   background: tomato;
-  width: 615px;
+  width: 50vw;
 }
 
 .app__unit--per {
   background: orange;
-  width: 577px;
+  width: 50%;
 }
 
 .app__unit--px {
@@ -97,21 +111,154 @@ body::before {
 
 .app__unit--em {
   background: greenyellow;
-  padding: 20px;
-  width: 500px;
+  padding: 1.25em;
+  width: 31.25em;
 }
 
 .app__unit--rem {
   background: green;
-  padding: 20px;
-  width: 500px;
+  padding: 1.25rem;
+  width: 31.25rem;
 }
 
 .app__em {
   display: none;
 }
 
+.component {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 40ch;
+}
+
+.component__cover {
+  height: 250px;
+  position: relative;
+}
+
+.component__image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.component__details {
+  padding: 25px 20px;
+}
+
+.component__title {
+  margin-top: 0;
+}
+
+.component__description {
+  margin-bottom: 0;
+}
+
+.discount {
+  background-color: red;
+  border-radius: 0.5em 0 0 0;
+  bottom: 0;
+  color: white;
+  padding: 0.3125em 0.625em 0.625em 2.5em;
+  position: absolute;
+  right: 0;
+}
+
+.discount::before {
+  background: url(../assets/img/star.svg) center no-repeat;
+  background-size: 100% auto;
+  content: '';
+  height: 1.875em;
+  left: 0.4375em;
+  position: absolute;
+  top: 0.8125em;
+  width: 1.875em;
+}
+
+.discount__value {
+  font-size: 3.25em;
+}
+
+.discount__unit {
+  font-weight: bold;
+}
+
+.discount__label {
+  display: block;
+  font-size: 0.75em;
+  margin-top: -0.625em;
+}
+
 .app__hero {
-  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  min-height: 18.75rem;
+}
+
+.app__hero::before {
+  background: url(../assets/img/ay-el-mar@mobile.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 64em) {
+  .app__hero::before {
+    background-image: url(../assets/img/ay-el-mar@tablet.jpg);
+  }
+}
+
+@media (min-width: 87.5em) {
+  .app__hero::before {
+    background-image: url(../assets/img/ay-el-mar@desktop.jpg);
+  }
+}
+
+@media (min-width: 150em) {
+  .app__hero::before {
+    background-image: url(../assets/img/ay-el-mar-c.jpg);
+  }
+}
+
+.app__hero-title {
+  font-size: 5vw;
+  position: relative;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+@media (min-width: 76.875em) {
+  .app__hero-title {
+    font-size: 3.875rem;
+  }
+}
+
+.app__hero-cover {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 /*# sourceMappingURL=app.css.map */

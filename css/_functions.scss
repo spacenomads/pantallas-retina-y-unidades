@@ -1,3 +1,11 @@
 @function px($pixels) {
 	@return $pixels * 1px;
 }
+
+@function em($pixels, $parent: $font-size) {
+	@return $pixels/$parent * 1em;
+}
+
+@function rem($pixels) {
+	@return $pixels/$font-size * 1rem;
+}

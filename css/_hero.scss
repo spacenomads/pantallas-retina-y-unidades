@@ -1,53 +1,53 @@
 .app__hero {
-	display: none;
-	// align-items: center;
-	// color: white;
-	// display: flex;
-	// height: 100vh;
-	// justify-content: center;
-	// overflow: hidden;
-	// position: relative;
-	// min-height: rem(300);
+	//display: none;
+	align-items: center;
+	color: white;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	min-height: rem(300);
 
-	// &::before {
-	// 	background: url(../assets/img/ay-el-mar@mobile.jpg) center center no-repeat;
-	// 	background-size: cover;
-	// 	//content: '';
-	// 	height: 100%;
-	// 	left: 0;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	width: 100%;
-	// 	z-index: 1;
-	// 	@media (min-width: em(1024)) {
-	// 		background-image: url(../assets/img/ay-el-mar@tablet.jpg);
-	// 	}
-	// 	@media (min-width: em(1400)) {
-	// 		background-image: url(../assets/img/ay-el-mar@desktop.jpg);
-	// 	}
-	// 	@media (min-width: em(2400)) {
-	// 		background-image: url(../assets/img/ay-el-mar-c.jpg);
-	// 	}
-	// }
+	&::before {
+		background: url(../assets/img/ay-el-mar@mobile.jpg) center center no-repeat;
+		background-size: cover;
+		//content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		@media (min-width: em(1024)) {
+			background-image: url(../assets/img/ay-el-mar@tablet.jpg);
+		}
+		@media (min-width: em(1400)) {
+			background-image: url(../assets/img/ay-el-mar@desktop.jpg);
+		}
+		@media (min-width: em(2400)) {
+			background-image: url(../assets/img/ay-el-mar-c.jpg);
+		}
+	}
 }
 
-// .app__hero-title {
-// 	font-size: 5vw;
-// 	position: relative;
-// 	text-shadow: 0 0 14px rgba(black, .15);
-// 	z-index: 2;
+.app__hero-title {
+	font-size: 5vw;
+	position: relative;
+	text-shadow: 0 0 14px rgba(black, .15);
+	z-index: 2;
 
-// 	@media (min-width: em(1230)) {
-// 		font-size: rem(62);
-// 	}
-// }
+	@media (min-width: em(1230)) {
+		font-size: rem(62);
+	}
+}
 
-// .app__hero-cover {
-// 	height: 100%;
-// 	left: 0;
-// 	object-fit: cover;
-// 	position: absolute;
-// 	top: 0;
-// 	width: 100%;
-// 	z-index: 1;
-// }
+.app__hero-cover {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
